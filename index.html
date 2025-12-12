@@ -9,9 +9,48 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
+        nav {
+            background-color: #5E79A3;
+
+        }
+
+        div {
+            padding-top: 30px;
+        }
+
+        nav div {
+            padding-top: 0px;
+        }
+
         body {
             padding-top: 100px;
+            padding-bottom: 400px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #EFF2F6;
         }
+
+        h1 {
+            color: #131821;
+        }
+
+        p {
+            color: #131821;
+        }
+
+        ul {
+            color: #131821;
+
+        }
+
+       .card {
+        padding-top: 20px;
+        background-color: #EAE5E1;
+       }
+       
+       
+        
+        
     </style>
 
 </head>
@@ -20,10 +59,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
-        <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div class="container-fluid p-3 mb-2 bg-primary text-white">
-                <a class="navbar-brand" href="#">Catherine Barstow</a>
+    <header>
+        <nav class="fixed-top navbar navbar-expand-lg py-0" >
+            <div class="container-fluid p-3 mb-2 bg">
+                <a class="navbar-brand"> Catherine Barstow </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
                     aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,31 +71,30 @@
                 <div class="collapse navbar-collapse" id="mainMenu">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Education</a>
+                            <a class="nav-link active" aria-current="page" href="#edu">Education</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                            <a class="nav-link active" aria-current="page" href="#skill">Skills</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                            <a class="nav-link active" aria-current="page" href="#project">Projects</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Work</a>
+                            <a class="nav-link active" aria-current="page" href="#work">Work</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Contact</a>
+                         <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/contact.html">Contact Me</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
-
+    </header>
 
         <br><br>
 
@@ -69,110 +107,151 @@
                 </figure>
             </div>
 
-            <div class="col-6 col-sm-4">
 
-                <br><br><br><br><br>
-
-                <h1>
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <br><br>
+                <h2>
                     Catherine Barstow
-                </h1>
+                </h2>
                 <p>
+                    <strong>
+                        Class of 2026 at St. Lawrence University
+                    </strong>
+                    <br>
                     She/her/hers  
+                    <br>
+                    I graduated high school from Potsdam Central School in 2022.  I continued my education at St. Lawrence University majoring in economics.  I am a current senior to graduate in spring of 2026.  I have diverse job experiences such as working many years as a cashier and assistant manager at the Roxy Theater.  I also work at my local figure skating club coaching many kids the fundamentals on how to skate.
+                    <br>
+                    Find about more about me down below 
                 </p>
-                <h5>
-                    Class of 2026 at St. Lawrence University
-                </h5>
-            </div>
-
-            <!-- Force next columns to break to new line at md breakpoint and up -->
-                <div class="w-100 d-none d-md-block"></div>
+                <br><br>
             </div>
         </div>
+        </div>
 
-
+        
         <br><br><br><br><br>
 
 
-        <div class="container text-left">
-            <h1 class="display-6">Education</h1>
-            <p>
-                <ul>
-                    <li>
-                        Potsdam Central School, class of 2022
-                    </li>
-                    <li>
-                        Majoring in economics at St. Lawrence University, class of 2026
-                    </li>
-                </ul>
-            </p>
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+             <div class="card-body">
+                <h1 class="display-6" id="edu">Education</h1>
+                <p class="card-text">
+                    <ul>
+                        <li>
+                            Graduated from Potsdam High School in 2022
+                        </li>
+                        <li>
+                            Currently enrolled at St. Lawrence University where I am majoring in economics, Class of 2026.
+                        </li>
+                    </ul>
+                </p>
+             </div>
+            </div>
+          </div>
+
+
+
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="display-6" id="work">Work</h1>
+                <p>
+                    <ul>
+                        <li>
+                            Cashier and Assistant Manager at Roxy theater 
+                        </li>
+                        <li>
+                            Learn to Skate Coach at Potsdam Figure Skating Club 
+                        </li>
+                        <li>
+                            Working at Barstow Motors and Barstow Subaru
+                        </li>
+                    </ul>
+                </p>
+            </div>
         </div>
-
-        <br>
-
-        <div class="container text-left">
-            <h1 class="display-6">Skills</h1>
-            <p>
-                <ul>
-                    <li>
-                        skill item 
-                    </li>
-                    <li>
-                        skill item
-                    </li>
-                </ul>
-            </p>
-        </div>
-
-        <br>
-
-        <div class="container text-left">
-            <h1 class="display-6">Projects</h1>
-            <p>
-                <ul>
-                    <li>
-                        project item
-                    </li>
-                    <li>
-                        project item
-                    </li>
-                </ul>
-            </p>
-        </div>
-
-        <br>
-
-        <div class="container text-left">
-            <h1 class="display-6">Work</h1>
-            <p>
-                <ul>
-                    <li>
-                        Cashier and Assistant Manager at Roxy theater 
-                    </li>
-                    <li>
-                        Learn to Skate Coach at Potsdam Figure Skating Club 
-                    </li>
-                    <li>
-                        Barstow Motors 
-                    </li>
-                </ul>
-            </p>
         </div>
 
 
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="display-6" id="skill">Skills</h1>
+                <p>
+                    <ul>
+                        <li>
+                            Inducted in Omicron Delta Epsilon honors society in 2025
+                        </li>
+                        <li>
+                            Experience managing money and problem sloving 
+                        </li>
+                        <li>
+                            Experience with customer service  
+                        </li>
+                        <li>
+                            Experience using excell for economics as well as statistics 
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="display-6" id="project">Projects</h1>
+                <p>
+                    <ul>
+                        <li>
+                            Using interactive brokers to simulate investing in the stock market for the class Investments (spring 2025)
+                        </li>
+                        <li>
+                            Using bloomberg terminal to research the company General Motors for the class Corporate Finance (fall 2024)
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="display-6">Contact Me</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inbox" viewBox="0 0 16 16">
+                        <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z"/>
+                    </svg>
+                email: cabars22@stlawu.edu 
+                <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                github: 
+                <br><br>
+                <a href="contact.html" class="btn btn-primary" style="background-color: #A35E79; border-color: #A35E79;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    </svg>
+                    Or click here to contact me here
+                </a>
+            </div>
+        </div>
+        </div>
 
 
 
 
 
-    
 
-
-
-        
-
-
-
-                
 
 
 
