@@ -63,7 +63,7 @@
                 <div class="collapse navbar-collapse" id="mainMenu">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html"nav-item">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/index.html#edu">Education</a>
@@ -102,33 +102,28 @@
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="d6c4e61b-64d2-4ed1-8c54-52bdd5c8e5b3">
 
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" name="name" id="name">
 
+                        <label for="InputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                
+
+                        <label for="message" class="form-label">Message: </label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                
                         <br><br>
 
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
+                        <button type="submit" class="btn" style="background-color: #A35E79; border-color: #A35E79;">Submit</button>
 
-                        <br><br>
-
-                        <label for="message">Message:</label>
-                        <input type="text" name="message" id="message">
-
-
-                        <br><br>
-
-                        <input type="submit" value="submit" style="background-color: #A35E79; border-color: #A35E79;">
-
-
+                </form>
                 </p>
              </div>
             </div>
           </div>
 
 
-
-         </form>
+         
     </body>
 </html>
 </body>
